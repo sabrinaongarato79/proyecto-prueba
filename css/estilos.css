@@ -1,0 +1,373 @@
+
+/*ESTILOS GLOBALES*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    width: 100%;
+}
+
+/*MENU HAMBURGUESA*/
+ul, input{
+    display: none;
+    padding: 0;
+}
+input:checked ~ ul
+{
+display: block;
+}
+label{
+    box-sizing: border-box;
+    display: inline-block;
+  
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    text-align: right;
+    font-size: 40px;
+    margin-left: 90px;
+}
+li{
+    display: block;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+
+}
+li a{
+    text-decoration: none;
+    color:#222222 ;
+   
+}
+.navegacion{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 25px 15px 15px;
+}
+/*SECCION INTRODUCCION*/
+.foto{
+    background-image: url("../Imágenes/Vector.png");
+    background-repeat: no-repeat;
+    background-image: center center;
+    background-size: contain;
+    width:330px ;
+    margin: 0 auto;
+}
+.introduccion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+width: 100%; 
+
+}
+.introduccion h1{
+ font-size: 30px;
+ font-weight: semibold;
+}
+.introduccion p{
+    font-size: 16px;
+    font-weight: regular;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+ 
+}
+.linkedin,.instagram,.twitter{
+    padding: 20px;
+    background-color: #8e7bef;
+    border-radius: 50%;
+    width: 30px;
+    margin: 0 10px ;
+}
+.boton{
+    height: 55px;
+    width:100%;
+    background-color: #5d3bef;
+    text-align: center;
+    margin-top:30px;
+    padding-top:5px;
+}
+.boton a{
+   
+    display: inline-flex;
+    align-items: center;    
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+/*ESTILOS SOBRE MI*/
+.sobre-mi{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sobre-mi h2{
+    margin-top: 80px;
+}
+.sobre-mi p{
+    text-align: justify;
+    line-height: 1.7;
+}
+/*HABILIDADES*/
+.habilidades{
+    margin: 0 auto;
+    text-align: center;
+}
+.habilidades h2{
+    margin-top: 80px;
+}
+.contenedor-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+.habilidad{
+    width:150px;
+    background-color: #f9f5f2;
+    padding: 12px;
+    margin-top: 30px;
+
+}
+.habilidad img{
+    width: 15px;
+    margin-right: 6px;
+}
+.texto-habilidad{
+    text-align: justify;
+}
+/*EXPERIENCIAS*/
+.experiencias{
+    margin: 0 auto;
+    text-align: center;
+}
+.experiencias h2{
+    margin-top: 80px;
+}
+.contenedor-experiencias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.experiencia{
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.experiencia:last-of-type{
+    margin-bottom: 0;
+}
+.empresa{
+    display: flex;
+    align-items: center;
+    
+}
+.empresa img {
+    width: 100px;
+}
+.info {
+  
+    width: 110px;
+    text-align: left;
+    margin-left: 10px;
+}
+.info h3, .info h4 , .info p{
+    margin: 5px;    
+}
+.info h4{
+    font-weight:500;
+    font-size: 13px;
+}
+.info p{
+    font-size: 8px;
+    font-weight: lighter;
+}
+
+/*ESTILOS PORTAFOLIOS*/
+.portafolio{
+    margin: 0 auto;
+    text-align: center;
+    width: 98%;
+}
+.portafolio h2{
+    margin-top: 80px;
+}
+.contenedor-portafolio{
+    display: flex;
+ flex-wrap:wrap ;
+ 
+}
+.contenedor-portafolio img{ 
+    margin-bottom: 30px;
+}
+
+/*ESTILO FOOTER*/
+footer{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+footer h2{
+    margin-top: 80px;
+}
+.contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.elemento{
+width: 180px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 80px;
+}
+.icono {
+    background-color:#f9f5f2 ;
+    border-radius: 50%;
+    width: 100px;
+  
+
+}
+.icono img{
+    width: 70px;
+    height: 80px;
+}
+.texto-contacto h3, .texto-contacto p{
+    margin: 5px;
+}
+.texto-contacto p{
+    font-weight: lighter;
+}
+.copyright {
+    color: #8e7bef;
+}
+
+/*ESTILOS PARA TABLET*/
+
+/*ESTILOS PARA PC*/
+@media screen and (min-width:575px) {
+    /*ESTILO MENU*/
+
+    ul{
+        display: flex;
+
+    }
+    label{
+        display: none;
+    }
+    /*ESTILOS PARA INTRODUCION*/
+    .introduccion{     
+        flex-direction: row;
+        align-items: center;
+        height: 400px; 
+        justify-content: center; 
+        width: 60%;
+        margin: 0 auto;
+    }
+    .introduccion h1{
+        font-size: 50px;
+        font-weight: semibold;
+        margin: 0;
+       }
+    .foto{
+        width: 60%;
+
+          
+    }
+    .texto{
+        width: 40%;
+         margin-left: 50px;    
+
+    }
+    .boton{
+       
+        margin-top:20px;
+   
+    }
+    /*ESTILOS SOBRE MI*/
+.sobre-mi{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sobre-mi p{
+ text-align: center;
+}
+/*HABILIDADES*/
+.habilidades{
+  
+    width: 80%;
+}
+
+.habilidad{
+    width:200px;
+ height: 200px;
+    padding: 12px;
+ 
+
+
+}
+.habilidad img{
+    width: 15px;
+    margin-right: 6px;
+}
+.texto-habilidad{
+    text-align: justify;
+padding-right: 25px;
+}
+/*EXPERIENCIAS*/
+
+.experiencia{
+    width: 330px;   
+  align-items: center;
+  height: 100px;
+margin-right: 50px;
+  
+}
+/*ESTILOS PORTAFOLIOS*/
+.portafolio{
+  
+    width: 90%;
+}
+
+
+.contenedor-portafolio img{ 
+    margin-right: 30px;
+    width: 30%;
+
+}
+/*FOOTER*/
+footer{
+width: 60%;
+}
+.contenedor-footer{
+      flex-direction: row;
+      justify-content: space-between;  
+      
+}
+
+.icono {
+      width: 150px;
+  
+
+}
+.icono img{
+    width: 90px;
+    height: 100px;
+}
+}/*CIERRE DE LA QUERY*/
+
+
+
+    
+
+
+
+
+
